@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap");
+
+:root {
+  --primary-dark: #333435;
+  --primary-light: #d50f67;
+
+  --neutral-light: #f6f9fa;
+  --neutral-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+img,
+picture,
+svg {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.button,
+.first-section__right,
+.section-two__right {
+  display: none;
+}
+
+section {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+section p {
+  color: var(--primary-dark);
+}
+
+section h1 {
+  font-size: 1.6875rem;
+  font-weight: 300;
+}
+
+.section-two,
+.section-four {
+  background-color: var(--neutral-light);
+}
+
+.section-three__left img {
+  width: 250px;
+  height: 250px;
+}
+
+.section-four h1 {
+  font-size: 1rem;
+}
+
+.section-four p {
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
+
+  .button,
+  .first-section__right,
+  .section-two__right {
+    display: inherit;
+  }
+
+  .button {
+    position: relative;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    min-width: 175px;
+    font-size: 1.25rem;
+    padding: 10px 20px 11px;
+
+    background-color: var(--primary-light);
+    color: var(--neutral-white);
+    text-decoration: none;
+    border-radius: 1000px;
+    border: none;
+  }
+
+  .button:hover,
+  .button:focus {
+    opacity: 0.7;
+  }
+
+  section {
+    text-align: start;
+    padding: 5rem 0;
+  }
+
+  section h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  .info {
+    max-width: 475px;
+  }
+
+  .section-three__left img {
+    width: inherit;
+    height: inherit;
+  }
+
+  .section-three__right {
+    margin-left: 100px;
+  }
+
+  .section-four {
+    text-align: center;
+    color: var(--primary-light);
+  }
+
+  .section-four h1 {
+    line-height: 1.8;
+    font-size: 2.5rem;
+  }
+
+  .section-four p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #9f0f7b;
+  }
+}
